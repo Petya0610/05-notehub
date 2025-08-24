@@ -1,4 +1,4 @@
-.list {
+/* .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 16px;
@@ -73,4 +73,69 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+} */
+
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  /* головне */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.listItem {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+}
+
+.title {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.content {
+  margin: 0;
+  color: #475569;
+  flex: 1;
+  /* штовхає футер вниз */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 12px;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #334155;
+}
+
+.button {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.button:disabled {
+  opacity: .6;
+  cursor: default;
 }

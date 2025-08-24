@@ -26,7 +26,7 @@ export default function App() {
     placeholderData: keepPreviousData,
   });
 
-  const items = data?.items ?? [];
+  const items = data?.notes?? [];
   const totalPages = data?.totalPages ?? 0;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
